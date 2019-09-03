@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using PCLAppConfig;
+using PCLAppConfig.FileSystemStream;
 using UIKit;
+using XamForms.Shell.Bdd.Bootstrapper;
 
 namespace XamForms.Shell.Bdd.iOS
 {
@@ -22,6 +25,9 @@ namespace XamForms.Shell.Bdd.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            try { ConfigurationManager.Initialise(PortableStream.Current); } catch (Exception) { }
+            BootStrapper.Initialize(new AppSettings());
+
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 

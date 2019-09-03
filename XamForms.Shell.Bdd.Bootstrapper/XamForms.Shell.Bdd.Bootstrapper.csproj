@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommonServiceLocator" Version="2.0.4" />
+    <PackageReference Include="PCLAppConfig" Version="1.0.1" />
+    <PackageReference Include="Unity.Container" Version="5.11.1" />
+    <PackageReference Include="Unity.ServiceLocation" Version="5.11.1" />
+    <PackageReference Include="Xamariners.RestClient" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>

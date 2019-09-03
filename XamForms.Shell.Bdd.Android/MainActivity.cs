@@ -6,6 +6,9 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using PCLAppConfig;
+using PCLAppConfig.FileSystemStream;
+using XamForms.Shell.Bdd.Bootstrapper;
 
 namespace XamForms.Shell.Bdd.Droid
 {
@@ -18,6 +21,10 @@ namespace XamForms.Shell.Bdd.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(savedInstanceState);
+
+            try { ConfigurationManager.Initialise(PortableStream.Current); } catch (Exception) { }
+         
+            BootStrapper.Initialize(new AppSettings());
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);

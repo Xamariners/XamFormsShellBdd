@@ -45,6 +45,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
+    <Reference Include="PCLAppConfig">
+      <HintPath>..\..\..\..\..\Users\BenIshiyama-Levy\.nuget\packages\pclappconfig\1.0.1\lib\netstandard2.0\PCLAppConfig.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLAppConfig.FileSystemStream">
+      <HintPath>..\..\..\..\..\Users\BenIshiyama-Levy\.nuget\packages\pclappconfig\1.0.1\lib\netstandard2.0\PCLAppConfig.FileSystemStream.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -53,6 +59,9 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="PCLAppConfig">
+      <Version>1.0.1</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="4.2.0.709249" />
     <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.1" />
     <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="28.0.0.1" />
@@ -69,6 +78,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="..\XamForms.Shell.Bdd\App.config">
+      <Link>Assets\App.config</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AndroidAsset>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
@@ -99,6 +112,10 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\XamForms.Shell.Bdd.Bootstrapper\XamForms.Shell.Bdd.Bootstrapper.csproj">
+      <Project>{F58BB240-75E3-4488-B589-E9F684D6C724}</Project>
+      <Name>XamForms.Shell.Bdd.Bootstrapper</Name>
+    </ProjectReference>
     <ProjectReference Include="..\XamForms.Shell.Bdd\XamForms.Shell.Bdd.csproj">
       <Project>{9E386E2F-0382-422B-91A0-97C7D4D749A2}</Project>
       <Name>XamForms.Shell.Bdd</Name>

@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamForms.Shell.Bdd", "XamFo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamForms.Shell.Bdd.Test", "XamForms.Shell.Bdd.Test\XamForms.Shell.Bdd.Test.csproj", "{F2971774-A19F-44FA-873E-54F2623F5C32}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamForms.Shell.Bdd.Bootstrapper", "XamForms.Shell.Bdd.Bootstrapper\XamForms.Shell.Bdd.Bootstrapper.csproj", "{F58BB240-75E3-4488-B589-E9F684D6C724}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,18 @@ Global
 		{F2971774-A19F-44FA-873E-54F2623F5C32}.Release|iPhone.Build.0 = Release|Any CPU
 		{F2971774-A19F-44FA-873E-54F2623F5C32}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{F2971774-A19F-44FA-873E-54F2623F5C32}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{F58BB240-75E3-4488-B589-E9F684D6C724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F58BB240-75E3-4488-B589-E9F684D6C724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F58BB240-75E3-4488-B589-E9F684D6C724}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{F58BB240-75E3-4488-B589-E9F684D6C724}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{F58BB240-75E3-4488-B589-E9F684D6C724}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{F58BB240-75E3-4488-B589-E9F684D6C724}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{F58BB240-75E3-4488-B589-E9F684D6C724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F58BB240-75E3-4488-B589-E9F684D6C724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F58BB240-75E3-4488-B589-E9F684D6C724}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{F58BB240-75E3-4488-B589-E9F684D6C724}.Release|iPhone.Build.0 = Release|Any CPU
+		{F58BB240-75E3-4488-B589-E9F684D6C724}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{F58BB240-75E3-4488-B589-E9F684D6C724}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -15,12 +15,11 @@
 
     <FlyoutItem Title="Xam Forms BDD" FlyoutDisplayOptions="AsMultipleItems">
         <ShellSection Title="Login">
-            <ShellContent>
-                <views:LoginPage/>
-            </ShellContent>
+            <ShellContent Title="Login"
+                           ContentTemplate="{DataTemplate views:LoginPage}"/>
         </ShellSection>
         <ShellSection Title="Home">
-        <ShellContent Title="Home"
+            <ShellContent Title="Home"
                           ContentTemplate="{DataTemplate views:HomePage}"/>
         </ShellSection>
     </FlyoutItem>
