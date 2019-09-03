@@ -1,0 +1,33 @@
+﻿<Shell
+    x:Class="XamForms.Shell.Bdd.AppShell"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:XamForms.Shell.Bdd.Views;assembly=XamForms.Shell.Bdd"
+    x:Name="TheShell"
+    Title="XamForms Shell BDD"
+    FlyoutBehavior="Flyout"
+    BindingContext="{Binding AppShell, Source={StaticResource Locator}}"
+    FlyoutIsPresented="{Binding FlyoutIsOpen, Mode=TwoWay}"
+    Navigated="OnShellNavigated"
+    Navigating="OnShellNavigating"
+    TabBarIsVisible="False"
+    >
+
+    <FlyoutItem Title="Xam Forms BDD" FlyoutDisplayOptions="AsMultipleItems">
+        <ShellSection Title="Login">
+            <ShellContent>
+                <views:LoginPage/>
+            </ShellContent>
+        </ShellSection>
+        <ShellSection Title="Home">
+        <ShellContent Title="Home"
+                          ContentTemplate="{DataTemplate views:HomePage}"/>
+        </ShellSection>
+    </FlyoutItem>
+
+    <!--<MenuItem
+        BindingContext="{x:Reference TheShell}"
+        Command="{Binding BindingContext.LogoutCommand}"
+        Text="Logout" />-->
+
+</Shell>
